@@ -1,0 +1,47 @@
+SentinelRecover VERSION 1.4
+
+      mnuFile.Caption := '&File';
+      mnuFile_Openquarantinefolder.Caption := '&Open Quarantine Folder...';
+      mnuFile_RestoreSelected.Caption := '&Restore Selected Files';
+      mnuFile_DeleteSelected.Caption := '&Delete Selected Files';
+      mnuFile_Exit.Caption := '&Exit';
+      mnuFile_Reload.Caption := 'Re&load the quarantine folder';
+
+      mnuUtility.Caption := '&Utility';
+      mnuUtility_SelectAll.Caption := '&Select All';
+      mnuUtility_UnselectAll.Caption := '&Unselect All';
+      mnuUtility_CheckValidSignatures.Caption := 'Select all files with a valid &digital signature';
+      mnuUtility_Log.Caption := '&Log';
+
+      sMsgOpeningFolder := 'Opening folder %s...';
+      sMsgReady := 'Ready';
+      sMsgSelectQuarantineDirectory := 'Select a quarantine directory';
+
+      sMsgColumnOriginalLocation := 'Original location';
+      sMsgColumnQuarantineFile := 'Quarantined file';
+      sMsgColumnQuarantineDate := 'Quarantine date';
+
+      sMsgRestoringFile := 'Restoring file: %s';
+      sMsgFileDeleted := 'Quarantined file deleted: %s';
+      sMsgFileRestored := 'File restored: %s';
+      sMsgFileNotRestored := 'File NOT restored: %s';
+      sMsgAskRestoreFiles := 'Has been selected %s files.'
+                                   +CRLF+'Do you want to recover these files?';
+      sMsgAskDeleteFiles := 'Has been selected %s files.'
+                                   +CRLF+'Do you want to delete these files?';
+      sMsgAttention := 'Attention';
+      sMsgFilesSelectedRestored := 'Files: selected: %u, restored: %u';
+
+      sbOpenFolder.Hint := 'Open';
+      sbRestore.Hint := 'Restore selected files';
+      sbDelete.Hint := 'Delete selected files';
+      sbCheckAll.Hint := 'Select All';
+      sbUncheckAll.Hint := 'Unselect All';
+      sbViewLog.Hint := 'View the log';
+      sbCheckValidSignatures.Hint := 'Select files with a valid digital signature';
+      sbReload.Hint := 'Reload the quarantine folder';
+      lblStopClamSentinel.Caption := 'Stop ' + cMainProjectName + ' before to restore the files';
+
+        sMsgError := 'Error';
+        sMsgConfirm := '&Confirm';
+        sMsgCancel := 'Ca&ncel';

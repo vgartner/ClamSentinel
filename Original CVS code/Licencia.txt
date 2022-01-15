@@ -1,0 +1,16 @@
+Clam Sentinel es un escáner en tiempo real para ClamWin.
+Para Windows 98/98SE/ME/2000/XP/Vista/Windows 7 y Windows 8.
+
+Clam Sentinel requiere la instalación de ClamWin <http://es.clamwin.com/>.
+
+Copyright (C) 2010-2014  Andrea Russo - Italia
+
+Este programa es software libre. Puede redistribuirlo y/o modificarlo
+bajo los términos de la Licencia Pública General de GNU según es publicada
+por la Free Software Foundation, bien de la versión 2 de dicha Licencia o 
+bien (según su elección) de cualquier versión posterior.
+
+Este programa se distribuye con la esperanza de que sea útil, pero SIN NINGUNA
+GARANTÍA, incluso sin la garantía MERCANTIL implícita o sin garantizar la
+CONVENIENCIA PARA UN PROPÓSITO PARTICULAR. Véase la Licencia Pública General
+de GNU para más detalles <http://www.gnu.org/licenses/>.

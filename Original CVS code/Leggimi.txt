@@ -1,0 +1,32 @@
+Clam Sentinel
+di Andrea Russo - Venezia Italia
+dynclient@users.sourceforge.net
+
+http://clamsentinel.sourceforge.net/
+
+Clam Sentinel è uno scanner real-time gratuito ed open source che rileva le modifiche
+al filesystem e scansiona i file modificati o aggiunti utilizzando l'antivirus
+gratuito ClamWin http://it.clamwin.com/ (richiede l'installazione di questo antivirus).
+
+Per Windows 98/98SE/ME/2000/XP/Vista/Windows 7 e Windows 8.
+
+Il programma inoltre rileva i dischi rimovibili che vengono aggiunti (ad esempio
+penne usb) e controlla queste unità fino a quando il programma è in esecuzione sulla
+macchina o fino a quando la periferica non viene rimossa.
+Clam Sentinel per default sposta i file infetti in quarantena ma è possibile
+cambiare questo comportamento tramite il menù delle impostazioni avanzate.
+
+Clam Sentinel è stato testato su Windows 98SE, Windows 2000, Windows XP, Windows 7 e Windows 8.1.
+
+Clam Sentinel è sviluppato utilizzando Delphi (Delphi 4 o successivi, fino a
+Delphi 2005) ed il codice sorgente è disponibile su Sourceforge
+http://clamsentinel.cvs.sourceforge.net/
+
+Il file Sentinel.vxd è utilizzato solo su Win98.
+
+Per aggiornare Clam Sentinel utilizzando la versione senza installazione
+(.zip senza installazione) chiudere il programma se in esecuzione ed estrarre
+il contenuto nella stessa cartella.
+
+Per maggiori informazioni su come configurare ed utilizzare Clam Sentinel leggere
+i documenti SentinelSimpleGuide.html e ExtraProtection.html presenti in questa stessa cartella.

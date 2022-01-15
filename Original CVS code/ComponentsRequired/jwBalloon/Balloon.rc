@@ -1,0 +1,3 @@
+ERROR BITMAP "images\error.bmp"
+INFO BITMAP "images\info.bmp"
+WARNING BITMAP "images\warning.bmp"

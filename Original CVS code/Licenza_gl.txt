@@ -1,0 +1,13 @@
+Clam Sentinel è unha ferramenta analise en tempo real pra ClamWin.
+Para Windows 98/98SE/ME/2000/XP/Vista/Windows 7 e Windows 8.
+
+Clam Sentinel require a instalación do antivirus gratuito ClamWin
+<http://www.es.clamwin.com/>.
+
+Copyright (C) 2010-2014  Andrea Russo - Italia
+
+Este programa é de software libbre: Vd pode redistribuilo e/ou modificalo baixo os termos da licenza GNU General Public License publicada pola Free Software Foundation, coa versión 3 de Licenze, ou
+(á tua opción) algunha versión aposterior.
+
+Este programa está distribuido coa esperenza de que sexa útil, pero
+ SEN NINGUNHA GARATÍA; sen ningunha garantía implicadar a conveniencia ou PROPÓSITO PARTICULAR.  Lea a GNU General Public License para máis detalles <http://www.gnu.org/licenses/>.

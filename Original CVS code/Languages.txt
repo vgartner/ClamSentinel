@@ -1,0 +1,198 @@
+Translate the messages in your language and send the file to the following address: dynclient@users.sourceforge.net
+
+The file is in the form variable := 'message';
+
+### Clam Sentinel VERSION 1.22
+
+    English:
+      sMsgStopped := 'Stopped';
+      sMsgRunOnSystemStartup := 'Do you want to Run ' + cProjectName + ' on system startup?';
+      sMsgClamWinConfNotFound := 'File '+SCANNER_CONF_FILE+' not found.'
+                 +CRLF+CRLF+'Please edit correct values into the file:';
+      sMsgFileNotFound := 'File %s not found.';
+      sMsgScanning := 'Scanning...';
+      sMsgDriveHasBeenInserted := 'Drive %s has been inserted.'
+                    + CRLF + CRLF + 'Do you want to scan it now for viruses?';
+      sMsgCaptionDetected := 'Confirm: Drive %s detected';
+      sMsgVirusMovedToQuarantine := 'A %s was moved to quarantine!';
+      sMsgVirusNotMovedToQuarantine := 'A %s was found but NOT moved to quarantine (report only)!';
+      sMsgFalsePositive := 'false positive';
+      sMsgVersionInfo := cProjectName + ' Version ' + VERSION;
+      sMsgAboutInfo := 'A resident scanner for the free antivirus ClamWin.'
+       +CR+CR + cURL + CR
+       +CR+CR + 'Developed by Andrea Russo Italy'
+       +CR+CR + 'A special thanks to Robert Scroggins.'
+       +CR+CR + 'Credits: ' + sCredits;
+      sMsgFileReadOnly := 'Can not open file %s for writing.';
+      sMsgHaveLatestVersion := 'You have the latest version.';
+      sMsgNewVersionAvailable := 'The new version %s is available.';
+      sMsgCheckLatestVersion := 'Check Latest Version';
+      sMsgMaxFilesizeForLogFile := 'Max filesize for log files MB:';
+      sMsgValueNotAccepted := 'Value not accepted.';
+      sMsgMaxNumActiveScans := 'Maximum number of simultaneously active scans (1..10): ';
+      sMsgInformation := 'Information';
+      sMsgMemoryScanning := 'Memory scan';
+      sMsgDriveScanning := 'Scanning the drive %s';
+      sMsgModifiedFolder := 'Modified folder';
+      sMsgFileChanged := 'Folder: %s' + CRLF + 'File: %s';
+      sMsgFolderChanged := 'A new folder has been identified.'
+               + CRLF + 'Folder: %s';
+      sMsgNewFileCreated := 'A new file has been identified.'
+               + CRLF + 'Folder: %s' + CRLF + 'File: %s';
+      sMsgSuspiciousFile := 'suspicious file';
+      sMsgObfuscatedFile := 'obfuscated file';
+      sMsgbadPEHeader := 'file with invalid PE format';
+      sMsgCryptedFile := 'crypted file';
+      sMsgSuspiciousOriginFile := 'suspicious origin file';
+      sMsgBadSignatureFile := 'file with invalid signature';
+      sMsgSignExpired := 'file with expired signature';
+      sMsgVerifySuspiciousFile := 'Please verify this suspicious file:';
+
+      sMsgModifiedRegistry := 'Registry modified';
+      sMsgRegistryChanged := 'It has been found the modification of the registry key:'
+        + CRLF + '%s';
+
+      mnuSettings_RunOnStartup.Caption := 'Run '+cProjectName+' on startup';
+      mnuClamSentinelWebsite.Caption := 'Visit '+cProjectName+' Website';
+
+      mnuSettings_AdvancedSettings.Caption := 'Advanced settings';
+      mnuAdvancedSettings_Drives.Caption := 'Choose disks to monitor';
+      mnuAdvancedSettings_Extensions.Caption := 'Extensions scanned';
+      mnuAdvancedSettings_NoScan.Caption := 'Paths or files not scanned';
+      mnuAdvancedSettings_FullScan.Caption := 'Paths where all files will be scanned';
+      mnuAdvancedSettings_MaxActiveScan.Caption := 'Maximum number of simultaneously active scans';
+      mnuAdvancedSettings_LogMaxSize.Caption := 'Max filesize for log files';
+      mnuAdvancedSettings_UseVxdOnWin98.Caption := 'Use vxd for detect filesystem changes';
+      mnuSettings.Caption := 'Settings';
+      mnuSettings_MemoryScanAtStartup.Caption := 'Scan the memory when the program starts';
+      mnuSettings_Log.Caption := 'Write scan activity to the log';
+      mnuSettings_DetectNewDrives.Caption := 'Detect and monitor new drives';
+      mnuSettings_AskForScanNewDrives.Caption := 'Ask to scan new drives';
+
+      mnuSettings_MonitorSystemChanges.Caption := 'Monitor system for new malware';
+      mnuSettings_MonitorSystemChanges_DetectionWithWarnings.Caption := 'Detect suspicious files and warn about system changes';
+      mnuSettings_MonitorSystemChanges_DetectionOnly.Caption := 'Detect suspicious files only';
+      mnuSettings_MonitorSystemChanges_NoDetection.Caption := 'Disabled';
+      mnuSettings_MonitorSystemChanges_SkipFilesWithValidSignature.Caption := 'Skip files with a valid digital signature (reduces security)';
+
+      mnuSettings_InfectedFiles.Caption := 'What to do when an infected file has been found';
+
+      mnuInfectedFiles_MoveToQuarantine.Caption := 'Move to quarantine folder';
+      mnuInfectedFiles_ReportOnly.Caption := 'Report only';
+
+      mnuSettings_NotifyNewVersion.Caption := 'Notify of new versions';
+
+      mnuMemoryScan.Caption := 'Memory scan';
+      mnuQuarantine.Caption := 'Quarantine Folder';
+      mnuQuarantineTools.Caption := 'Quarantine';
+      mnuOpen.Caption := 'Logs';
+      mnuRealTimeLog.Caption := 'Real Time Scan';
+      mnuMessagesLog.Caption := 'Messages';
+      mnuQuarantineLog.Caption := 'Quarantine';
+      mnuMemoryLog.Caption := 'Memory Scan';
+      mnuDriveScanLog.Caption := 'Drive Scan';
+      mnuStart.Caption := 'Start';
+      mnuStop.Caption := 'Stop';
+      mnuCheckVersion.Caption := 'Check Latest Version';
+      mnuAbout.Caption := 'About';
+      mnuExit.Caption := 'Exit';
+
+    English:
+      btnConfirm.Caption := '&Confirm';
+      btnCancel.Caption := 'Ca&ncel';
+      Caption := cProjectName + ' - Fixed disks monitored';
+
+      sMsgRemovableDevice := 'Removable Disk';
+      sMsgFixedDevice := 'Local Disk';
+      sMsgRemoteDevice := 'Network Drive';
+      sMsgAbsentDevice := 'Absent';
+      sMsgNotReadyDevice := 'not ready';
+
+    English:
+      btnConfirm.Caption := '&Confirm';
+      btnCancel.Caption := 'Ca&ncel';
+
+      btnReplace.Caption := '&Replace';
+      btnAdd.Caption := '&Add';
+      btnDelete.Caption := '&Delete';
+
+      sMsgValueAlreadyExists := 'Value %s already exists.';
+      sMsgNoExtensionsScannedDefined := 'No extensions scanned defined.';
+      sMsgSelectFolder := 'Select a folder';
+      sMsgSelectFile := 'Select a file';
+
+      sbSelectFolder.Hint := 'Select a folder';
+      sbSelectFile.Hint := 'Select a file';
+
+        ScanPaths: Caption := cProjectName + ' - Paths or files not scanned';
+        Extensions: Caption := cProjectName + ' - Extensions scanned';
+        FullScanFolders: Caption := cProjectName + ' - Paths where all files will be scanned';
+
+    English:
+      sMsgCannotOpenURL := 'Cannot open URL %s';
+      sMsgUnableInitializeWininet := 'Unable to initialize Wininet';
+
+    English:
+      sMsgErrorLoadingVXDFile := 'Error loading VXD file';
+      sMsgCouldNotAccessDeviceDriver := 'Couldn''t access device driver';
+
+    English:
+        sMsgError := 'Error';
+        sMsgConfirm := '&Confirm';
+        sMsgCancel := 'Ca&ncel';
+
+### Setup messages
+
+english.ProgramIsRunning = The program Clam Sentinel is running.
+english.PleaseCloseTheProgramFirst = Please close the program first.
+english.ClamWinNotInstalled = Setup detected that ClamWin is not installed.
+english.ClamWinIsRequired = Clam Sentinel requires the installation of ClamWin http://www.clamwin.com/
+english.SetupWillTerminateNow = Setup will terminate now.
+english.AutostartKeyForAllUser = Start Clam Sentinel automatically for all users
+
+
+### SentinelRecover VERSION 1.4
+
+SentinelRecover VERSION 1.4
+
+      mnuFile.Caption := '&File';
+      mnuFile_Openquarantinefolder.Caption := '&Open Quarantine Folder...';
+      mnuFile_RestoreSelected.Caption := '&Restore Selected Files';
+      mnuFile_DeleteSelected.Caption := '&Delete Selected Files';
+      mnuFile_Exit.Caption := '&Exit';
+      mnuFile_Reload.Caption := 'Re&load the quarantine folder';
+
+      mnuUtility.Caption := '&Utility';
+      mnuUtility_SelectAll.Caption := '&Select All';
+      mnuUtility_UnselectAll.Caption := '&Unselect All';
+      mnuUtility_CheckValidSignatures.Caption := 'Select all files with a valid &digital signature';
+      mnuUtility_Log.Caption := '&Log';
+
+      sMsgOpeningFolder := 'Opening folder %s...';
+      sMsgReady := 'Ready';
+      sMsgSelectQuarantineDirectory := 'Select a quarantine directory';
+
+      sMsgColumnOriginalLocation := 'Original location';
+      sMsgColumnQuarantineFile := 'Quarantined file';
+      sMsgColumnQuarantineDate := 'Quarantine date';
+
+      sMsgRestoringFile := 'Restoring file: %s';
+      sMsgFileDeleted := 'Quarantined file deleted: %s';
+      sMsgFileRestored := 'File restored: %s';
+      sMsgFileNotRestored := 'File NOT restored: %s';
+      sMsgAskRestoreFiles := 'Has been selected %s files.'
+                                   +CRLF+'Do you want to recover these files?';
+      sMsgAskDeleteFiles := 'Has been selected %s files.'
+                                   +CRLF+'Do you want to delete these files?';
+      sMsgAttention := 'Attention';
+      sMsgFilesSelectedRestored := 'Files: selected: %u, restored: %u';
+
+      sbOpenFolder.Hint := 'Open';
+      sbRestore.Hint := 'Restore selected files';
+      sbDelete.Hint := 'Delete selected files';
+      sbCheckAll.Hint := 'Select All';
+      sbUncheckAll.Hint := 'Unselect All';
+      sbViewLog.Hint := 'View the log';
+      sbCheckValidSignatures.Hint := 'Select files with a valid digital signature';
+      sbReload.Hint := 'Reload the quarantine folder';
+      lblStopClamSentinel.Caption := 'Stop ' + cMainProjectName + ' before to restore the files';

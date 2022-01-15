@@ -1,0 +1,165 @@
+<HTML>
+<HEAD>
+<TITLE>Opis programu Clam Sentinel i jego instalacji</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META name="revisit-after" content="15 DAYS">
+<LINK TYPE="text/css" HREF="Style.css" REL="stylesheet" TITLE="Style">
+<META name="language" content="pl">
+</HEAD>
+<BODY>
+<A CLASS="home" HREF="http://clamsentinel.sourceforge.net/">Clam Sentinel</A>
+<CENTER><H3 ALIGN=CENTER>Opis programu Clam Sentinel i jego instalacji</H3></CENTER>
+Clam Sentinel dodaje podstawową funkcję skanera w czasie rzeczywistym do programu antywirusowego ClamWin na komputerach z platformą Windows. Sentinel wykorzystuje ClamWina`a by skanować pliki w czasie rzeczywistym podczas ich dodawania, modyfikowania czy też kopiowania na Twój komputer. Program skanuje w sposób ciągły dyski twarde oraz wymienne (podłączone pod USB), posiada również funkcję przenoszenia do kwarantanny nieznanego zagrożenia oraz ostrzegania użytkownika o podejrzanej aktywności w systemie. Sentinel zaprojektowany został głównie dla starszych komputerów (z systemami Windows 98, ME, 2000), ale testowany był również na stacjach z systemami XP, Vista i 7 - działa również w porządku. Sentinel obsługuje wielu użytkowników (nie koniecznie sieciowych) za pomocą pliku ClamSentinel.ini tworzonego w  %APPDATA%\ClamSentinel\.<BR>
+<BR>
+Zarówno Clam Sentinel jak i ClamWin są darmowym i „otwartym” oprogramowaniem (open source). <BR>
+Clam Sentinel można pobrać ze strony http://sourceforge.net/projects/clamsentinel/ <BR>
+ClamWin można pobrać ze strony http://www.clamwin.com/content/view/18/46/ <BR>
+<BR>
+<BR>
+INSTALACJA   <BR>
+<BR>
+Zanim zainstalujemy program Clam Sentinel, należy pobrać i zainstalować program ClamWin. Sentinel instaluje się z domyślną konfiguracją, która jest dopasowana dla większości użytkowników, chętni i doświadczeni użytkownicy mogą zmieniać te ustawienia za pomocą dwóch opcji w menu programu (Ustawienia i Zaawansowane ustawienia). Menu dostępne jest po kliknięciu prawym bądź lewym przyciskiem myszy na ikonkę programu na pasku powiadamiania (TRAY). Sentinel przenosi zainfekowane pliki do folderu kwarantanny programu ClamWin i pozwala na łatwy dostęp do niego z poziomu menu pod prawym bądź lewym przyciskiem myszy z ikonki programu umieszczonej na pasku systemowym.<BR>
+<BR>
+Program instalacyjny Sentinel`a przypomni użytkownikowi o zatrzymaniu bądź zamknięciu istniejącej wersji podczas procesu instalacji. Sentinel zachowa dotychczasową konfigurację, więc nie ma obawy utraty własnych ustawień.<BR>
+<BR>
+Jeśli jesteś nowym użytkownikiem, możesz być poproszony o ustawienie własnego katalogu instalacji programu. Najlepszym katalogiem do instalacji jest klasyczny C:\Program Files\ClamSentinel. Jeśli ściągnięty plik to ClamSentinel.exe, zwyczajnie przegraj go lub zapisz właśnie w tym katalogu. Jeśli ściągnięty plik to plik archiwum, rozpakuj go do ww katalogu i uruchom ClamSentinel.exe. Jeśli podczas rozpakowywania wyświetli się komunikat o istniejącym pliku, po prostu zastąp go. Podczas instalacji zaznacz opcję „Uruchom”, by program od razu mógł rozpocząć skanowanie Twojego komputera w czasie rzeczywistym.<BR>
+<BR>
+<BR>
+OBSŁUGA JĘZYKÓW<BR>
+<BR>
+Sentinel automatycznie używa języków: angielskiego, francuskiego, włoskiego, japońskiego, niemieckiego i polskiego, automatycznie angielskiego. Użytkownicy którzy chcą używać języka z poza pakietu muszą dodać linię w pliku .ini Sentinel`a ( „Language = French” ). Proszę nie używać znaków zapytania(?) a język francuski to tylko przykład, można wymusić każdy z pozostałych języków. Proszę każdą linię w pliku .ini odseparować od następnej jedną pustą linią. Jeśli chciałabyś (chciałbyś) pomóc projektowi Sentinel`a, możesz ściągnąć ten plik: <BR>
+http://clamsentinel.cvs.sourceforge.net/viewvc/clamsentinel/ClamSentinel/Languages.txt , przetłumacz i odeślij proszę  na adres<BR>
+dynclient@users.sourceforge.net<BR>
+<BR>
+<BR>
+DEINSTALACJA<BR>
+<BR>
+Można odinstalować program na trzy sposoby: <BR>
+1). wejść do Menu Start --» Wszystkie programy (programy) --» Clam Sentinel ....<BR>
+2). Panel sterowania -» Dodaj i usuń programy.....<BR>
+3). Wejść do katalogu programu i uruchomić program deinstalacyjny<BR>
+<BR>
+<BR>
+2.	Menu / USTAWIENIA /<BR>
+<BR>
+2.1	/ Uruchom program na starcie /<BR>
+<BR>
+Pierwszą konfiguracyjną opcją w menu USTAWIENIA jest "Uruchom program Clam Sentinel na starcie", którą powinieneś(-aś) wybrać podczas instalacji programu. Jeśli ta opcja umknie Ci podczas instalacji, zawsze można ją włączyć klikając prawym bądź lewym przyciskiem myszki na ikonkę programu na pasku systemowym i zaznacz tę opcję. Sentinel nie będzie mógł skanować w czasie rzeczywistym jeśli ta opcja będzie wyłączona.<BR>
+<BR>
+2.2	/ Skanuj pamięć gdy program się uruchomi /<BR>
+<BR>
+Następna opcja może zająć nieco czasu podczas uruchamiania programu, więc pewnie nie będziesz chciał/chciała jej zaznaczyć. Skanowanie pamięci z poziomu programu ClamWin jest znacznie szybsze.<BR>
+<BR>
+2.3	/ Zapisz aktywność skanowania do logu /<BR>
+<BR>
+Sentinel posiada zapis wyników ze skanowania w czasie rzeczywistym, skanowania pamięci, skanowania dysków (USB i stałych) jak i informacje o wykryciu nowych szkodliwych oprogramowania lub podejrzanych zmianach w systemie. Cały ten zapis jest aktywowany właśnie tą jedną opcją. Będziesz miał (-a) możliwość otrzymania wiadomości z wyniku tych operacji, która jest najważniejszą opcją dla przeciętnego użytkownika, dla niektórych użytkowników opcja ta może być zbyt aktywną.<BR>
+<BR>
+2.4	/ Wykryj i monitoruj nowe dyski / oraz / Pytaj czy skanować dyski /<BR>
+<BR>
+Następne dwie opcje skupione są na dyskach wymiennych jak USB PenDrive. Powinno się zaznaczyć opcję wykrywania i monitorowania lecz skanowanie może zając nieco czasu więc jeśli wolisz robić to ręcznie to lepiej skanować z poziomu ClamWin`a.<BR>
+<BR>
+2.5	/ Wykryj PNA (Przypuszczalnie Niechciane Aplikacje) /<BR>
+<BR>
+Normalnie nie trzeba zaznaczać tej opcji ponieważ w tym momencie program nie zidentyfikuje obecnie znanych wirusów jedynie PNA, które mogą być narzędziem wirusa albo plikami które mogą być stworzone przez takie narzędzie jak np. paczki, skrypty albo programy do zdalnego sterowania. Jeśli korzystasz dużo z internetu z włączoną opcją PNA, to dostaniesz zbyt dużo fałszywych pozytywnych wyników w folderze tymczasowych plików internetowych, które będą normalnymi skryptami i paczkami używanymi na większości stronach internetowych.<BR>
+<BR>
+2.6	/ Co zrobić gdy znaleziono zainfekowany plik /<BR>
+<BR>
+Pod tą opcją w menu programu kryją się dwa wybory: Przenieś do kwarantanny lub TYLKO raportuj. Wybierając kwarantannę jest najbezpieczniejsze dla skanowania w czasie rzeczywistym Clam Sentinel`a. ClamWin posiada zabezpieczenie przed fałszywymi pozytywnymi detekcjami zagrożeń plików systemowych Windows`a (na systemach XP i starszych to zabezpieczenie nie działa) a Sentinel nie przeniesie do kwarantanny nowego złośliwego oprogramowania które ma obowiązującą cyfrową sygnaturę. Więc jeśli nie wiesz którą opcję możesz zaznaczyć, po prostu użyj opcji TYLKO raportuj.<BR>
+<BR>
+2.7	/ Monituj system przed złośliwym oprogramowaniem /<BR>
+<BR>
+Nowy Monitor Systemowy Sentinel`a może monitorować złośliwe oprogramowanie i podejrzane zmiany w systemie. Ta pozycja w menu posiada trzy opcje: <BR>
+2.7.1	Wykryj podejrzane pliki i ostrzeż o zmianach w systemie, <BR>
+2.7.2	Tylko wykryj podejrzane pliki oraz <BR>
+2.7.3	Wyłączony. <BR>
+Domyślnie ustawione jest na Wyłączony, jak tylko nauczysz się o monitorowaniu systemu, możesz zmienić tę opcję na wykrywanie tylko podejrzanych plików. Pierwszą opcję zaznaczamy tylko w tedy jeśli jesteśmy pewni swojego doświadczenia i chcemy wiedzieć o wszystkich zmianach w systemie (a większość z nich jest i tak poprawna).<BR>
+<BR>
+ad. 2.7.1	<BR>
+Ta pierwsza opcja z ww menu pozwala na monitorowanie systemu przed złośliwym oprogramowaniem, plikami i zmianami w systemie (czyli prawdopodobnych złośliwych plików lub programów). Tylko zaawansowani użytkownicy powinni uruchamiać ten tryb programu. Opcja ta mówi Sentinel`owi aby monitował użytkownikowi za pomocą pomocą tzw. popup`ów (wyskakujących wiadomości) o każdym pliku umieszczanym w kwarantannie który nie posiada sygnatury w bazie wirusów ClamWin`a. Monituje również o każdym pliku który pojawił się w którymś z folderów systemowych Windows`a lub o zmianie w rejestrze systemu.<BR>
+Szczegóły wyskakujących wiadomości będą zawarte w dzienniku wiadomości (logu) dla odniesienia, które może być użyteczne w lokalizowaniu oryginalnej lokalizacji i innych szczegółów by pomóc badać potencjalnie niebezpieczny plik. Pliki poddane kwarantannie przez Monitor Systemowy nie będą mieć nazwy wirusa. Będą posiadać status “podejrzany (suspicious)” zaraz po nazwie pliku w folderze kwarantanny. Użytkownik powinien wysłać te pliki do centrum Clam AV aby można było przygotować szczepionki dla wszystkich użytkowników. Użytkownik może też zidentyfikować pliki tylko z ostrzeżeniami i wysłać je do skanera on-line, takich jak Jotti czy Virus Total by je zweryfikować. Jeśli kilka z większych korporacji antywirusowych takich jak Microsoft, Kaspersky, McAfee, Sophos, Symantec, czy Trend Micro mówią, że podejrzany plik jest zainfekowany, potwierdź infekcję pliku, potem możesz wysłać do centrum Clam AV aby przygotowano odpowiednią sygnaturę. Pliki z ostrzeżeniem o podejrzeniu nie koniecznie muszą być złośliwym plikiem/oprogramowaniem. By ustrzec się przed fałszywie pozytywnymi rozpoznaniami, po aktywowaniu opcji monitorowania systemu, użytkownik powinien uruchomić każdy ze swoich używanych programów (oczywiście jeden na raz) i dodać do „białej” listy wszystkie pliki które się wyświetlą podczas uruchamiania danego programu. Plik można dodać do „białej” listy za pomocą polecenia z menu<BR>
+/ Ścieżki lub pliki nie skanowane / w zaawansowanych ustawieniach Sentinel`a. Kiedy pojawi się ostrzeżenie o nieoczekiwanej zmianie w rejestrze lub po tym jak właśnie przeskanowaliśmy i zainstalowaliśmy nowy plik lub program, należałoby w tym właśnie momencie podeprzeć się oprogramowaniem czyszczącym takim jak Malwarebytes, Bitdefender online scan, lub Trend Micro's House Call scan. <BR>
+Ta opcja wymaga nieco dodatkowej pracy i dlatego właśnie adresowana jest do bardziej zaawansowanych użytkowników.<BR>
+<BR>
+ad. 2.7.2<BR>
+Druga opcja monitora systemu zwie się / Wykryj tylko podejrzane pliki /.  Ta opcja skierowana jest do większości użytkowników. Gdy ta opcja zostanie wybrana, Monitor systemu będzie powiadamiał użytkownika o wszelkich nowych złośliwych plikach/programach lub o przenoszeniu do kwarantanny tylko za pomocą wyskakujących komunikatów (popup-ów). Nie będzie żadnych powiadomień o innych zmianach w systemie ale wpisy o wszelkiej aktywności nadal będą pojawiały się w dzienniku wiadomości programu Sentinel (LOGU). <BR>
+<BR>
+<BR>
+ad. 2.7.3<BR>
+Trzecią domyślną opcją jest / Wyłączony /. Jeśli masz problem z używaniem Monitora systemu, wybierz właśnie tę opcję, powiadom twórcę programu i zostaw monitor systemu jako wyłączony do czasu aż autor programu nie skontaktuje się z Tobą lub sam(-a) nie nauczysz się nim posługiwać. Naucz się jak działa monitor systemu ponieważ jest to ważna opcja by zapewnić najlepsze zabezpieczenie dla użytkownika Sentinel`a<BR>
+<BR>
+<BR>
+Monitorowanie systemu może ostrzegać o podejrzanych plikach albo o innych zmianach nawet jeśli korzystasz z „dobrego” oprogramowania w sieci - takiego jak skanera antywirusowego w internecie. Może też powiadamiać w momencie uruchamiania dobrego programu czy też zmiany w rejestrze podczas instalacji znanego Ci oprogramowania - te ostrzeżenia i komunikaty są w porządku gdy wiesz co robisz albo właśnie przeskanowałeś ten plik ClamWin`em. Po uruchomieniu znanego Ci oprogramowania powinieneś(powinnaś) sprawdzić, które pliki potrzebne temu programowi umieścić na „białej” liście. Jeśli instalujesz łatki dla Windows każdego miesiąca, również możesz otrzymać powiadomienia o złośliwych plikach (zazwyczaj dla C:\Windows\System32\catroot files). Te ostrzeżenia można pominąć ponieważ jest tam zbyt dużo plików aby dodawać je za każdym razem do plików nie skanowanych (białej listy), a nazwy tych plików i tak zmieniają się przy każdej następnej łatce. Powinno się dodawać do białej listy tylko te pliki, które używa się regularnie, ponieważ ta operacja wyklucza ze skanowania zarówno z monitora systemu jak i ze skanowania w czasie rzeczywistym Sentinel`a. Można dodawać do białej listy zarówno pliki z rozszerzeniem (plik.exe) oraz plik z jego ścieżką (C:\Folder_programu\plik.rozszerzenie).Jeśli to możliwe, zaleca się używania nazw plików ze ścieżkami aby zapobiec pominięcia jakiegoś złośliwego pliku, który może się podszyć się pod nasz dobry plik. <BR>
+Możesz chcieć tymczasowo zatrzymać pracę Sentinel`a lub wyłączyć monitor systemu podczas ściągania/instalowania programu. Przeskanuj go ClamWin`em zanim ściągnięty program uruchomisz/zainstalujesz i włącz monitorowanie systemu po instalacji aby można było dodać do białej listy pliki o których będziesz poinformowany (pamiętaj aby zweryfikować każdy plik wysłany do kwarantanny zanim go przywrócisz do pierwotnej lokacji)<BR>
+<BR>
+Jeśli wyświetli się komunikat o zmianie w rejestrze gdy instalujesz nowy program, który przed chwilą skanowałeś antywirusem, nie przejmuj się nim, po prostu dodaj go do białej listy. Takie zmiany w rejestrach zazwyczaj nie są groźne. Niektóre programy (jak np. antywirusy) ustawiają takie jednorazowe zmiany w rejestrze by mogły je przy następnym uruchomieniu komputera wyczyścić. <BR>
+<BR>
+Możesz zlokalizować każdy plik z ostrzeżenia poprzez odnalezienie jego lokalizacji w dzienniku monitora systemu (najświeższe z ostrzeżeń zapisują się na końcu dziennika). Podejrzane pliki, które zostały poddane kwarantannie znajdują się w folderze kwarantanny ustawianym w programie ClamWin. Po zlokalizowaniu rzekomo podejrzanego pliku możesz go zweryfikować przez wysłanie go na Jotti lub Virus Total w internecie. Jeżeli kilka z większych korporacji antywirusowych ( jak Microsoft, Kaspersky, McAfee, Sophos, Symantec lub Trend Micro potwierdzą iż podejrzany plik jest faktycznie zainfekowany, wtedy powinno się przesłać go do centrum ClamAV na stronie http://www.clamav.net/lang/en/sendvirus/ by przygotowano odpowiednią sygnaturę dla tego typu wirusa. Plik taki można później wykasować z komputera albo pozostawić w kwarantannie ponieważ przygotowanie sygnatury przez centrum ClamAV może potrwać kilka dni. Jeśli nie zostanie ona przygotowana przez dłuższy czas niż 3-4 dni - prawdopodobnie oznacza to że plik był z rodziny „fałszywie pozytywnych” rozpoznań i można go spokojnie przywrócić do oryginalnej lokacji oraz dodać do białej listy (czyli lokacji lub plików nie skanowanych). Jeśli był on w kwarantannie, usuń słowo “suspicious” (podejrzany) z nazwy przed przywracaniem pliku.<BR>
+<BR>
+Jeśli otrzymasz powiadomienie gdy nie instalujesz żadnego programu, może to oznaczać że jakiś złośliwy program próbuje się „wcisnąć” do Twojego systemu. Jeśli natomiast powiadomienia będą się pojawiać w bliskim odstępie, jeden po drugim gdy nie instalujesz żadnego programu, to możesz być pewny/pewna że masz „robala” w systemie i należy to zweryfikować tak jak opisano wyżej.<BR>
+<BR>
+2.8	/ Zawiadom o nowych wersjach / - Powiadomienie o nowej wersji programu<BR>
+<BR>
+Ostatnia opcja zwraca wiadomość w formie popup-u przy uruchamianiu systemu (oczywiście po kilku sekundach/minutach w zależności od prędkości startowania systemu oraz szybkości łącza) o tym, czy istnieje w sieci nowsza wersja od tej zainstalowanej na Twoim komputerze. Można tę opcję wyłączyć by nie dręczyła użytkownika :).<BR>
+<BR>
+1.	Menu / ZAAWANSOWANE USTAWIENIA /<BR>
+<BR>
+Podstawowe ustawienia są przystosowane dla większości użytkowników, ale jest jeszcze pięć dodatkowych opcji w zaawansowanych ustawieniach, dzięki którym zaawansowani użytkownicy mogą „po(d)kręcić” nieco Sentinel`a. :)<BR>
+<BR>
+1.1 / Wybierz dyski do monitorowania /<BR>
+<BR>
+Tę opcję zaznacza się podczas instalacji Sentinel`a. Można oczywiście zmienić to w każdym dowolnym momencie. Polega to na tym, że wybieramy dysk/dyski, które Sentinel ma na bieżąco monitorować. Powinno się zawsze zaznaczyć dysk C (systemowy)<BR>
+<BR>
+1.2. / Rozszerzenia do skanowania /<BR>
+<BR>
+Kolejna opcja pozwala nam na zdefiniowanie jakiego rodzaju pliki Sentinel ma skanować. Domyślnie Sentinel posiada zdefiniowanych ok. 120 podstawowych rozszerzeń systemu Windows. Bardziej zaawansowani użytkownicy mogą przygotowywać listy swoich plików bardziej podatnych na zainfekowanie rożnego rodzaju wirusami. Każde zmniejszenie standardowej liczby rozszerzeń na pewno troszkę przyspieszy Sentinel`a. Należy jednak pamiętać że złe skonfigurowanie tego podmenu może spowodować osłabienie ochrony przeciwwirusowej. Można zawsze zGooglować temat „niebezpieczne rozszerzenia plików” (“dangerous file extensions”) jeśli zainteresowani jesteście zmniejszeniem liczby rozszerzeń plików.<BR>
+<BR>
+<BR>
+1.3. / Lokacje lub pliki nie skanowane (BIAŁA LISTA) /<BR>
+<BR>
+Sentinel po instalacji posiada zdefiniowaną tylko jedną ścieżkę z komputera która jest zaznaczona jako nieskanowana - folder z ostatnią aktywnością Windows i ta ścieżka powinna być wykluczona ze skanowania aby Sentinel nie był za bardzo obciążony. Można dodawać inne lokacje lub nawet pliki, których nie będziemy chcieli skanować ponieważ np. Sentinel będzie je rozpoznawał jako złośliwe a wiadomo że nie są. <BR>
+<BR>
+Przykłady: c:\temp - wyeliminuje cały katalog TEMP; c:\temp\test.bat - wyeliminuje tylko plik test.bat z katalogu TEMP; <BR>
+test.bat - nie będzie skanowany plik lub pliki w którymkolwiek miejscu na dysku.<BR>
+Można przeglądać pliki/foldery poprzez kliknięcie tej małej ikonki po prawej stronie w oknie konfiguracji wykluczeń. Jeśli używasz innego antywirusa razem z Sentinel`em - należy wykluczyć jego bazę danych oraz folder kwarantanny ponieważ tam mogą być te same sygnatury wirusów i niepotrzebnie będą one przenoszone do kwarantanny Sentinel`a. Ta opcja używana jest również do wykluczania ze skanowania plików podejrzanych, wyłapanych podczas monitorowania systemu (menu pkt. 2.7.). „Dobre” programy, które używasz codziennie mogą powodować ostrzeżenia, więc możesz je wykluczyć by w przyszłości  ostrzeżenia pojawiały się tylko przy prawdziwych zagrożeniach. Powinieneś/powinnaś używać tej opcji tylko dla plików/lokacji których naprawdę nie chcesz skanować, mniej folderów oznacza mniejszą ochronę ze strony skanowania w czasie rzeczywistym, jak i dla monitora systemu Sentinel`a.<BR>
+<BR>
+<BR>
+1.4. / Lokacje plików skanowanych /<BR>
+<BR>
+Ta opcja służy do wybierania folderów w których niezależnie od wykluczeń czy też rozszerzeń wszystkie pliki będą sprawdzane. Wybieranie folderów odbywa się za pomocą tej małej ikonki po prawej. Generalnie nie jest konieczne ustawianie dodatkowych lokacji, ponieważ Sentinel będzie pracował pod większym obciążeniem.<BR>
+<BR>
+1.5. / Maksymalna liczba jednoczesnych skanowań /<BR>
+<BR>
+Sentinel ma możliwość ustawienia więcej niż jednego skanowania w tym samym czasie. Opcję tę powinno się włączać tylko wtedy, gdy posiadamy duży dysk i mocny wielordzeniowy procesor. Sentinel nie jest tak szybki jak niektóre komercyjne skanery więc nie chcieliśmy aby pracował zbyt ciężko.<BR>
+<BR>
+1.6. / Maksymalny rozmiar pliku dziennika /<BR>
+<BR>
+Standardowo ustawiono na 5 MB, które powinien w zupełności wystarczyć. Sentinel posiada cztery rodzaje dziennika: ze skanowania w czasie rzeczywistym, ze skanowania pamięci, ze skanowania dysków, oraz dziennik wiadomości. Każdy z tych dzienników ma ten sam rozmiar. Jeśli posiadasz starszy komputer lub komputer z małym dyskiem twardym i każdy megabajt jest na wagę złota, możesz zmienić rozmiar pliku do np. 1 MB , który będzie również wystarczający.<BR>
+<BR>
+<BR>
+<BR>
+/ Wiadomości /<BR>
+<BR>
+<BR>
+Pod opcją WIADOMOŚCI (opcjonalnie w nowej wersji Sentinel`a) kryje się pokazywanie lub ukrywanie powiadomień odnośnie zmian w rejestrze, przenoszenia do kwarantanny lub podejrzanych plikach. Po dodaniu „dobrych” plików/folderów do białej listy nie powinno się już pokazywać wiele powiadomień, więc każda pojawiająca się potem wiadomość będzie ważna. Zajrzyj do dziennika wiadomości aby sprawdzić czy nie umknęła nam czasem jakaś zmiana.<BR>
+<BR>
+Używanie Clam Sentinel`a na dysku USB<BR>
+<BR>
+Jest możliwość aby Sentinel`a nosić zawsze przy sobie np. na dyskach przenośnych. Aby uruchomiać Sentinel`a z USB, użytkownik może ręcznie konfigurować plik .ini, który znajduje się w tym samym folderze, z którego uruchamiany jest program. Polecenie konfiguracyjne to // UseLocalIniFile // (1= tak; 0= nie które jest ustawione jako domyślnie). Aby włączyć możliwość uruchamiania z USB - należy te opcje ustawić jako // 1 //<BR>
+<BR>
+Używanie Clam Sentinel`a wraz z  ClamWin`em w wersji PORTABLE (bez instalacji) <BR>
+<BR>
+Najpierw trezba pobrać wersję PORTABLE programu ClamWin. Następnie trzeba uruchomić program (plik ClamWinPortable.exe w katalogu na dysku przenośnym)  i skonfigurować go wg własnych potrzeb (nie wszystkie opcje są dostępne w wersji PORTABLE).<BR>
+Po tej operacji należy pobrać ze strony Clam Sentinel`a plik ClamSentinel.ZIP. Rozpakować zawartość pliku do katalogu ClamWinPortable\App\clamwin\bin na dysku przenośnym. Teraz można uruchomić plik ClamSentinel.exe z wcześniej podanego katalogu. Pojawi się ikonka w TRAY`u, tak jak w przypadku instalacyjnej wersji. Można konfigurować Clam Sentinel`a wg upodobań.<BR>
+<BR>
+<BR>
+Jak tylko Sentinel będzie skopiowany na PEN`a i skonfigurowany, można uruchamiać go plikiem ClamSentinel.exe w katalogu ClamWinPortable\App\clamwin\bin (oczywiście dysk lub PEN muszą być obecne w porcie USB). Nie trzeba już uruchamiać dodatkowo ClamWin`a PORTABLE, Clam Sentinel odnajdzie automatycznie ClamWin`a. Jednakże chcąc uaktualnić bazy wirusów - ClamWin musi być chwilowo uruchomiony. Pomimo że nie trzeba mieć włączonego ClamWin`a by korzystać z Sentinel`a, należy obydwa programy skonfigurować tak jak wcześniej opisano.<BR>
+<BR>
+Można tworzyć skróty programów gdzie tylko chcemy by potem szybciej je uruchamiać.<BR>
+UWAGA: należy pamiętać aby zatrzymać działanie Clam Sentinel`a i ClamWin`a zainstalowanych w systemie przed używaniem tych programów w wersji PORTABLE.<BR>
+<BR>
+Aby zatrzymać działanie programów należy kliknąć prawym przyciskiem myszy na ich ikonki na pasku zadań (obok zegarka) i z menu wybrać polecenie / Wyjście /. Jeśli będziesz chciał/chciała odłączyć dysk przenośny od komputera, właśnie w taki sposób należy zakończyć działanie obydwóch programów.<BR>
+<BR>
+<BR>
+Dziękuję wszystkim za to, że używacie Clam Sentinel`a. Proszę promujcie i polecajcie innym ten program oraz proszę aby wszelkie komentarze oraz propozycje i uwagi przesłać do Andrea Russo - autora programu. Zaglądajcie na stronę Sentinel`a przynajmniej raz w miesiącu po wiadomości oraz aktualizacje.<BR>
+</BODY>
+</HTML>

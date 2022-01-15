@@ -1,2 +1,2 @@
 # ClamSentinel
-Imported from https://sourceforge.net/projects/clamsentinel (CVS)
+Imported from https://sourceforge.net/projects/clamsentinel CVS repo

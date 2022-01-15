@@ -1,0 +1,38 @@
+
+
+
+
+CLAM SENTINEL TESTING
+
+_____ Program appears in System Tray, "All Programs," and Windows Installed Programs
+_____ All menu items/icons/functions work okay from system tray
+_____ Real-time detecton works okay on EICAR
+_____ Quarantine/Remove work okay for both one item and several items
+_____ Quarantine Browse/Restore work okay from "All Programs" and Program directory
+
+System Monitor Detection In c:\users\yourname\appdata\ folder (Disable Real-Time Monitor):
+_____ Invalid Headers
+_____ Invalid Digital Signatures
+_____ Suspicious files
+_____ Crypted files
+_____ Obfuscated files
+_____ Suspicious Origin files
+_____ False positives on Programs folder (FP files _____ total program files _____)
+
+System Monitor Detection In c:\testfolder\ (Disable Real-Time Monitor):
+_____ Invalid Headers
+_____ Invalid Digital Signatures
+_____ Suspicious files - (Not Yet Available)
+_____ Crypted files - (Not Yet Available)
+_____ Obfuscated files - (Not Yet Available)
+_____ Suspicious Origin files - (Not Yet Available)
+_____ False positives on Programs folder (FP files _____ total program files _____) (Not Yet Available)
+
+Log Reports are active and are viewed okay:
+_____ Real Time scan
+_____ Memory scan
+_____ Drive scan
+_____ Messages
+_____ Quarantine
+
+_____ Finish - Be Sure To Activate Real-Time Monitor and System Monitor!

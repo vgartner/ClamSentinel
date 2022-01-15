@@ -1,0 +1,86 @@
+object Form1: TForm1
+  Left = 280
+  Top = 261
+  Width = 426
+  Height = 252
+  Caption = 'Form1'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OnClose = FormClose
+  PixelsPerInch = 96
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 418
+    Height = 35
+    Align = alTop
+    BorderWidth = 2
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 6
+      Top = 9
+      Width = 42
+      Height = 13
+      Caption = 'Directory'
+    end
+    object btnStartStop: TButton
+      Left = 338
+      Top = 3
+      Width = 75
+      Height = 25
+      Caption = '&Start'
+      Default = True
+      TabOrder = 0
+      OnClick = btnStartStopClick
+    end
+    object edDirectory: TEdit
+      Left = 52
+      Top = 5
+      Width = 201
+      Height = 21
+      TabOrder = 1
+      Text = 'c:\'
+    end
+    object chkIncludeSubTree: TCheckBox
+      Left = 257
+      Top = 7
+      Width = 79
+      Height = 17
+      Caption = '&incl. SubDirs'
+      TabOrder = 2
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 35
+    Width = 418
+    Height = 190
+    Align = alClient
+    BorderWidth = 2
+    Caption = 'Panel2'
+    TabOrder = 1
+    object Memo1: TMemo
+      Left = 1
+      Top = 1
+      Width = 412
+      Height = 184
+      Align = alClient
+      TabOrder = 0
+    end
+  end
+  object DirMon1: TDirMon
+    Active = False
+    OnCreated = DirMon1Created
+    OnDeleted = DirMon1Deleted
+    OnModified = DirMon1Modified
+    OnRenamed = DirMon1Renamed
+    WatchSubtree = False
+    WatchFilters = [nfFILE_NAME, nfDIR_NAME, nfLAST_WRITE, nfCREATION]
+    Left = 160
+    Top = 83
+  end
+end

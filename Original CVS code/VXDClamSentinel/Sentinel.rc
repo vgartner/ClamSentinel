@@ -1,0 +1,34 @@
+#include <ver.h>
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,6,0,0
+ PRODUCTVERSION 1,6,0,0
+ FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+ FILEFLAGS VS_FF_PRERELEASE
+ FILEOS VOS_DOS_WINDOWS32
+ FILETYPE VFT_VXD
+ FILESUBTYPE VFT2_DRV_SYSTEM
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904E4"
+        BEGIN
+            VALUE "Comments", "Clam Sentinel is a real-time scanner for ClamWin. \r\nhttp://clamsentinel.sourceforge.net/\0"
+            VALUE "CompanyName", "Andrea Russo - Italy\0"
+            VALUE "FileDescription", "VXD driver for Clam Sentinel\0"
+            VALUE "FileVersion", "1.6\0"
+            VALUE "InternalName", "SENTINEL\0"
+            VALUE "LegalCopyright", "Copyright © Andrea Russo - Italy 2010-2011\0"
+            VALUE "LegalTrademarks", "Andrea Russo - Italy\0"
+            VALUE "OriginalFilename", "SENTINEL.VXD\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Clam Sentinel for Windows\0"
+            VALUE "ProductVersion", "1.6\0"
+            VALUE "SpecialBuild", "With semaphore (masm6.14)\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END

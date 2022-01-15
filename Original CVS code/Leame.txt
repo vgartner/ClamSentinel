@@ -1,0 +1,32 @@
+Clam Sentinel
+by Andrea Russo - Venice Italy
+dynclient@users.sourceforge.net
+
+http://clamsentinel.sourceforge.net/
+
+Clam Sentinel é un analizador en tempo real para ClamWin Antivirus.
+para Windows 98/98SE/ME/2000/XP/Vista/Windows 7 e Windows 8.
+
+Clam Sentinel require á instalación de ClamWin http://www.es.clamwin.com/
+
+Clam Sentinel é un programa que se executa na bandexa do sistema que detecta cambios no sistema de arquivos do sistema e análises
+os ficheiros moficados usando ClamWin (Clamscan.exe).
+Tamén detecta novas unidades emgadidas (como un dispotivo de datos usb) e monitoriza esas unidades mentras que o
+programa estea pechado ou mentras que a unidade sexa desconectada.
+
+Para a actualizacións de Clam Sentinel dende o ficheiro comprimido zip (Sen a instalación) parar a versión actual
+versión de Sentinel antes de instalalo ou desempaquetalo no direcotorio de Clam Sentinel.
+O ficheiro sentinel.exe non pode ser reeprazado cando Sentinel estea executandose.
+
+Clam Sentinel por defecto coloca os ficheiros infectados no cartafol de cuarentena pero Vd pode cambiar os cambios
+del dende o menú de 'Configuracions avanzadas'.
+
+Clam Sentinel foi testeado en Windows 98SE, Windows 2000, Windows XP, Windows 7 e Windows 8.1.
+
+Clam Sentinel está desenrolado con Delphi Win32 (Delphi 4 ou máis, ata o Delphi 2005) 
+e o código de fonte pode estar dispoñible en Sourceforge http://clamsentinel.cvs.sourceforge.net/
+
+O ficheiro Sentinel.vxd é usado só en Win98.
+
+Para máis información acerca de configurar e use Clam Sentinel mire os documentos
+ "SentinelSimpleGuide_gl.html" e "ProtecionExtra.html" colocados neste cartafol.

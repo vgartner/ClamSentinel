@@ -1,0 +1,434 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+            "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><TITLE>Clam Sentinel</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<META name="robots" content="index,follow">
+<META name="revisit-after" content="15 DAYS">
+<LINK TYPE="text/css" HREF="Style.css" REL="stylesheet" TITLE="Style">
+<META name="keywords" content="Clam Sentinel; real time; virus scanner; ClamWin; ClamSentinel">
+<META name="language" content="en">
+</HEAD><BODY>
+<A CLASS="home" HREF="http://clamsentinel.sourceforge.net/">Clam Sentinel</A>
+
+<H3 CLASS="western" ALIGN=CENTER>The Clam Sentinel Program
+Description And Setup</H3>
+<P>Clam Sentinel lets you use ClamWin Antivirus as a resident scanner
+as files are added, modified, or copied to your computer. It scans
+permanent hard drives, network drives, and USB/removable drives with
+ClamWin, and Clam Sentinel also uses its own system monitor to detect
+unknown malware that does not have a ClamWin signature. Clam Sentinel
+is designed especially for older computers, such as Windows 98, ME,
+2000, and XP, but it has been tested on Windows Vista/Windows
+7/Windows 8 machines and works fine on them also.</P>
+<P>Both Clam Sentinel and ClamWin are free, open source
+programs.<BR>Clam Sentinel can be downloaded from
+<A HREF="http://sourceforge.net/projects/clamsentinel/">http://sourceforge.net/projects/clamsentinel/</A>
+on the web.<BR>ClamWin can be downloaded from
+<A HREF="http://www.clamwin.com/content/view/18/46/">http://www.clamwin.com/content/view/18/46/</A>
+on the web.</P>
+<P><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>INSTALLATION</B></FONT></FONT></P>
+<P STYLE="font-weight: normal">ClamWin must be installed/configured
+on the computer before Clam Sentinel can be installed. The Clam
+Sentinel installation setup will remind you to stop and exit an old
+version of Sentinel during installation. The new installation will
+keep your old Clam Sentinel configuration settings and add any new
+settings needed.</P>
+<P STYLE="font-weight: normal">You should use C:\Program
+Files\ClamSentinel for the Sentinel installation directory. If your
+Clam Sentinel download file is the ClamSentinel.exe file, download or
+copy the .exe file to this directory and click on it to install. If
+your Sentinel download file is a zipped file, unzip it to this same
+directory, and click on the ClamSentinel.exe file to install. If your
+unzip program tells you that a file is already in the directory, tell
+it to replace the old file and all files. During installation, select
+Run on startup if it is offered, so that Sentinel will start in
+real-time mode on your computer. Select to use Sentinel for all users
+if asked during the install.</P>
+<P STYLE="font-weight: normal">You must stop and exit Clam Sentinel
+before installing a new version of ClamWin. Be sure to start Clam
+Sentinel after the new ClamWin version is installed.</P>
+<P><B>Language Support</B></P>
+<P STYLE="font-weight: normal">Clam Sentinel automatically supports
+the default language on the computer if it is English, French,
+Italian, Japanese, German, Spanish, Polish, Russian, Portuguese,
+Bulgarian, Azeri, Dutch, Indonesian, Hindu, and Galician. English is
+used as the default for all other languages. You can force Sentinel
+to use any of these languages by adding a row to the Sentinel .ini
+configuration file like this: Language = French. Do not use a period.
+Lines in the .ini file without a semicolon at the start are active.
+All other lines are just explanations. 
+</P>
+<P><SPAN STYLE="font-weight: normal">If you would like to help the
+Clam Sentinel project by translating the program into a new language,
+download this file:
+<A HREF="http://clamsentinel.cvs.sourceforge.net/viewvc/clamsentinel/ClamSentinel/Languages.txt">http://clamsentinel.cvs.sourceforge.net/viewvc/clamsentinel/ClamSentinel/Languages.txt</A>
+from the web and then do the translation and send the translation
+file to: </SPAN><I><SPAN STYLE="font-weight: normal">dynclient@users.sourceforge.net</SPAN></I>
+</P>
+<P><B>Uninstalling</B></P>
+<P STYLE="font-weight: normal">You can uninstall Clam Sentinel from
+the Windows Start menu, by selecting Start, All Programs, Clam
+Sentinel. You can also uninstall via the Windows Control Panel or via
+the Uninstall program in the Sentinel directory.</P>
+<P><FONT SIZE=3><B>**QUICK GUIDE TO CLAM SENTINEL CONFIGURATION AND
+OPERATION**</B></FONT></P>
+<P STYLE="font-weight: normal"><FONT SIZE=3>All Clam Sentinel
+configuration is done by right or left clicking the Clam Sentinel
+icon badge in the Windows system tray. We suggest that you use the
+default settings that are already configured.  Under settings choose
+to write scan activity to logs, detect and monitor new drives, ask to
+scan new drives, quarantine infected files, and detect suspicious
+files only. Under Advanced Settings, choose to monitor C drive,
+network drives, and any other hard disks/removable drives you may
+have.  USBs are usually drives F and G. Download files only from
+trusted web sites, do not use cracked software, do not visit porn
+sites or torrent sites, and do not put personal information on social
+networking sites.</FONT></P>
+<P STYLE="font-weight: normal"><FONT SIZE=3>Infected file detections
+are ClamWin detections. You must send files that are falsely detected
+as infected to Clam AV for signature correction. Suspicious file
+detections are Clam Sentinel system monitor detections. You must
+whitelist any falsely detected suspicious files in Clam Sentinel&mdash;Clam
+AV can do nothing about them. Whitelisting excludes a file from
+scanning by Clam Sentinel.  You can whitelist files in Advanced
+Settings, Paths Or Files Not Scanned. Read the section below on Paths
+Or Files Not Scanned for information about whitelisting.</FONT></P>
+<P STYLE="font-weight: normal"><FONT SIZE=3>To minimize Clam Sentinel
+false positive detections, set up a download folder and whitelist the
+folder in Clam Sentinel as a path or file not to be scanned. Download
+all files to the download folder before you run/install them. Scan
+each file with ClamWin and then with another AV or Jotti or
+VirusTotal before you install/run it. If the file is okay, then
+install/run it. If Clam Sentinel detects a file as suspicious, always
+scan it with ClamWin and then with another AV or Jotti or Virus
+Total. If the file is okay, disable the system monitor, whitelist the
+file, restore the quarantined file via the Sentinel Recover program,
+and re-enable the system monitor. If a suspicious file is also
+detected by another AV, upload the file to Clam AV so they can
+prepare a signature for both Clam AV and ClamWin. Read the rest of
+this guide for more complete information about Clam Sentinel
+operation.</FONT></P>
+<P><BR><BR>
+</P>
+<P ALIGN=CENTER STYLE="orphans: 132"><B>CLAM SENTINEL DETAILED
+OPERATING INSTRUCTIONS</B></P>
+<P><B>SETTINGS OPTIONS</B></P>
+<P><B>Memory Scan</B></P>
+<P>The first settings option is Scan the memory when the program
+starts. This is the same as ClamWin's memory scan. You will probably
+not want to activate this option. You can always scan memory with
+ClamWin manually or during a ClamWin scheduled scan. 
+</P>
+<P><B>Write scan activity to the log </B>
+</P>
+<P>The next option is Write scan activity to the log. Sentinel has 5
+scan logs for real-time, memory, USB/removable drive, messages about
+new malware/suspicious changes, and quarantine. All logs are
+activated by this one selection. For most users, the message log and
+quarantine logs are probably the most important. The real-time log is
+very active when you are on the world wide web.</P>
+<P><B>Detect And Monitor New Drives</B></P>
+<P>This option is for detection on removable drives (USB, etc.) You
+should choose to detect new drives, but scanning takes some time, so
+you would probably not want to scan new drives unless you are using a
+USB drive for the first time. You can scan a USB manually with
+ClamWin.</P>
+<P><B>Ask To Scan New Drives</B></P>
+<P STYLE="font-weight: normal">You can choose this option tom make
+Sentinel ask if you want to scan a USB (or another) removable drive
+when it is inserted. Scan all new USB drives that you have not used
+before.</P>
+<P><B>Infected File Options</B></P>
+<P>The next option is What to do when an infected file is found.
+There are two choices: Move to quarantine or Report Only. Choosing
+quarantine is best. ClamWin and Sentinel have protection from false
+positive detections on Windows system files. You can restore false
+positives from quarantine via the Sentinel Recover program. Use the
+Report Only option if you are not sure what to choose, but you will
+have to manually quarantine infected files or and manually remove
+files from quarantine..</P>
+<P><B>Monitor System For New Malware Options</B></P>
+<P STYLE="font-weight: normal">The next option is Monitor system for
+new malware. There are several System Monitor options: Detect
+suspicious files and warn about system changes, Detect suspicious
+files only, and Disable. There is also an option to Skip files with a
+valid digital signature. When Sentinel detects a suspicious file, it
+is put in quarantine (if you choose the quarantine option). The type
+of suspicious detection included in the filename. Suspicious files
+that are quarantined should be sent to Clam AV at
+http://www.clamav.net/lang/en/sendvirus/ so Clam can prepare a normal
+signature for all users.</P>
+<P STYLE="font-weight: normal">Do not select the option to Detect
+suspicious files and warn about system changes unless you are an
+experienced user who wants to know about all changes to your computer
+system. Users who select this option will see many popup messages
+about system changes (files put on the computer). Most system changes
+are okay and should not be a concern.</P>
+<P STYLE="font-weight: normal">The option to &ldquo;Detect suspicious
+files only&rdquo; is the default option and is recommended for most
+users. When this option is chosen, the System Monitor will give popup
+warning messages only when new suspicious files have been detected.
+There will be no popup warnings of other system changes, but an entry
+will still be made in the Message Log for the record. Send
+quarantined suspicious files to Clam AV for normal signature
+preparation. Whitelist Sentinel suspicious files that are false
+positive detections as explained below.</P>
+<P STYLE="font-weight: normal">The option to Disable the System
+Monitor turns off detection of suspicious files. You can Disable the
+system monitor while you &ldquo;whitelist&rdquo; a file, but
+re-enable it after you whitelist the file and restore it from
+quarantine via the Sentinel Recover program. If you have problems
+using the System Monitor, choose the Disable option and inform the
+Sentinel developer. The System Monitor provides important extra
+protection for malware that does not have a ClamWin virus signature.
+When the System Monitor is disabled, there will be a red mark in the
+lower right portion of the Clam Sentinel badge in the Windows system
+tray.</P>
+<P STYLE="font-weight: normal">Even if you practice &ldquo;safe
+surfing&rdquo; on the world wide web, the System Monitor may give an
+occasional false positive warning when downloading &ldquo;good&rdquo;
+files. Read the Quick Guide to Clam Sentinel Configuration and
+Operation about how to handle false positives<FONT SIZE=3><B>.</B></FONT></P>
+<P><SPAN STYLE="font-weight: normal">Upload quarantined suspicious
+files to Clam AV at <A HREF="http://www.clamav.net/lang/en/sendvirus/">http://www.clamav.net/lang/en/sendvirus/</A>
+on the web for normal virus signature preparation. If you check files
+with Jotti or Virus Total on the web, a suspicious file that is not
+detected by more than 3 AV programs is likely a &ldquo;false
+positive&rdquo; especially if the file is older than a week or two.
+See whitelisting elsewhere to learn how to exclude false positive
+files.</SPAN></P>
+<P STYLE="font-weight: normal">If you get a suspicious warning when
+you are not installing a new program, malware may be trying to
+install itself on your computer. If you are not installing/running a
+new program and you get a warning about a suspicious file, a warning
+about a registry change, or several warnings close together, you
+probably have malware on your computer. Run a complete ClamWin scan
+and then do can with a cleanup scanner, such as Malwarebytes Free
+Antimalware or Microsoft Safety Scanner (msert.exe).</P>
+<P STYLE="font-weight: normal">There is also an option to Skip Files
+With A Valid Digital Signature. Once in a while, a malware will have
+a valid digital signature (usually adware), but most files with a
+valid digital signature are okay, so it is fairly safe to select this
+option.</P>
+<P STYLE="font-weight: normal">N<B>otify Of New Versions</B></P>
+<P STYLE="font-weight: normal">The last Settings option is Notify of
+new versions. If you choose this option, Sentinel will give you a pop
+up message several minutes after turning on your computer if a new
+version is available for downloading at the Sentinel web site. Turn
+off the notification if it annoys you, and visit the Sentinel web
+site once a month to see if there is a new version.</P>
+<P><B>ADVANCED SETTINGS OPTIONS</B></P>
+<P>The advanced settings options are for expert users who want to
+&ldquo;tweak&rdquo; Sentinel. The configuration defaults that come
+with Sentinel are best for most users.</P>
+<P><B>Fixed Disks To Monitor</B></P>
+<P>The first Advanced option is Choose fixed disks to monitor. This
+is selected when you install Sentinel, but you can change it at any
+time. Sentinel can monitor hard drives, network folders, CD drives
+and USB/removable drives. Sentinel will normally automatically choose
+to monitor the C drive You should monitor all other hard drives and
+removable drives that you use regularly. USB drives are often named
+drive F or G by the Windows operating system. The CD drive is often
+called drive D or E.</P>
+<P><B>Extensions To Scan</B></P>
+<P>The next option is Choose what extensions Sentinel will scan. The
+Sentinel default option has about 130 Windows file extensions.
+Experienced users can configure their own custom scan extensions
+here, but they will miss any future changes made to the default
+extensions.</P>
+<P><B>Paths Or Files Not Scanned (Whitelisting)</B></P>
+<P STYLE="font-weight: normal">Operation: Disable System Monitor or
+Stop Sentinel, Verify Files, Whitelist &ldquo;Good&rdquo; Files,
+Re-Start/Enable</P>
+<P>The next option is Paths or Files not scanned. Clam Sentinel comes
+configured so that the path on your computer with the most recent
+Windows activity is not scanned (whitelisted). You can add other
+paths, or even individual files, that you do not want to be scanned
+if they will trigger an unwanted Sentinel suspicious detection. You
+can also whitelist infected file false positive detections until Clam
+AV corrects their virus signature. Clam Sentinel has wild card
+support (? and *) for filenames or paths not scanned. Files not
+scanned are excluded from both the System monitor and the real-time
+monitor, so be careful what you whitelist. Verify with Jotti or Virus
+Total that each file you whitelist is not really infected.</P>
+<P>Examples: c:\temp will exclude the temp folder from scans;
+c:\temp\test.bat will exclude the test.bat program in the temp folder
+from scans; test.bat will exclude the test.bat file anywhere on your
+computer from scans. You can browse files/folders on your computer by
+selecting the little icon on the whtelist configuration page. If you
+use Clam Sentinel with another antivirus/antimalware program, you
+should whitelist the other AVs program folder, data folder, and
+quarantine folder and database folders (if separate from data folder)
+from Clam Sentinel to prevent the other AV from triggering a false
+detection on a ClamWin virus signature. Also exclude Clam Sentinel
+and ClamWin program and data folders from the other scanner. This
+option is also used to exclude files from Sentinel's System Monitor
+warnings about suspicious files. If &ldquo;good&rdquo; programs that
+you use trigger a System Monitor warning, you can whitelist these
+files from the System Monitor so that future warnings will be only
+for &ldquo;real&rdquo; suspicious files. If possible, exclude
+individual files within a folder. Example:
+C:\Foldername\Filename.Extension. Excluding entire folders will mean
+less protection from both Sentinel's Real Time Monitor and the System
+Monitor.</P>
+<P><B>Paths Where All Files Will Be Scanned</B></P>
+<P>The next option is Paths where all files will be scanned. This is
+for selecting paths or directories, where all files are to be
+scanned&mdash;regardless of the extensions. You can browse paths or
+folders on your computer by selecting the little icon on the Sentinel
+configuration page. You will generally not need this option.</P>
+<P><B>Maximum No. Of Simultaneous Scans</B></P>
+<P>The next option is Maximum number of simultaneously active scans.
+Clam Sentinel comes configured with a 1 for this option, and most
+users should use it. You might set it to 2 if you have a very large
+hard drive or if your computer has a powerful dual processor and
+ClamWin/Clam Sentinel are your only antivirus software.</P>
+<P><B>Maximum Sentinel Log Size</B></P>
+<P>The last advanced settings option is Maximum Sentinel log file
+size. Clam Sentinel comes configured with a large 5 megabyte size,
+but 1 or 2 megabytes is usually enough. There are 5 logs, and each
+log has this same size.</P>
+<P><B>Quarantine</B></P>
+<P STYLE="font-weight: normal">There are two options under the
+quarantine menu. You can access the quarantine folder or restore
+quarantined files from here. 
+</P>
+<P STYLE="font-weight: normal">Access the quarantine folder to see
+what files have been quarantined.</P>
+<P STYLE="font-weight: normal">You can also run the Clam Sentinel
+Quarantine Recover program to restore files from quarantine back to
+their original location. Clam Sentinel comes with a separate program,
+SentinelRecover.exe, which is similar to ClamWin's Quarantine Browser
+program to restore files from quarantine. Sentinel Recover works on
+all computers, and it can restore files quarantined by both Clam
+Sentinel and ClamWin. Operation is simple, and the options are mostly
+self explanatory. To restore files, you should follow the operation
+steps above. Before restoring an infected file (not a System Monitor
+suspicious file), you should visit the Clam AV Submit A File page on
+the web to upload the file and tell Clam it is a false positive
+detection so they can correct their signature. Then you can whitelist
+the file for Clam Sentinel until it is corrected. If you intend to
+scan a detected file with a ClamWin on-demand scan, you should also
+whitelist it for ClamWin via the ClamWin filters tab. Remove the
+whitelisted file from both Clam Sentinel and ClamWin whitelists when
+Clam AV has corrected the signature in a few days. Never submit a
+file detected by the System Monitor as &ldquo;suspicious&rdquo; to
+Clam AV because Clam can do nothing about false positive System
+Monitor detections. Whitelist suspicious files for Clam Sentinel
+only.</P>
+<P><B>Logs</B></P>
+<P STYLE="font-weight: normal">There are logs for the real-time
+monitor, quarantined files, messages (System Monitor with some
+registry changes if you used the full system monitor option), memory
+scan, and drive scan. After &ldquo;whitelisting&rdquo; your &ldquo;good&rdquo;
+files/folders that are detected as suspicious by Clam Sentinel , you
+will normally not get many system monitor messages, so each message
+can be important. Check the Message log occasionally to see if you
+have missed anything. Recent messages are shown at the end of each
+log.</P>
+<P STYLE="font-weight: normal">You can locate any file warning by
+looking at the System Monitor Message Log (the most recent files are
+shown at the end of the log). Look at the Quarantine log to see
+suspicious files put in the ClamWin Quarantine folder. 
+</P>
+<P><B>Using Clam Sentinel On A USB Drive With ClamWin On The Hard
+Drive</B></P>
+<P STYLE="font-weight: normal">ClamWin must be installed on the
+computer the USB is plugged into, but it does not have to be
+installed on the USB. Put the Clam Sentinel program folder on the USB
+and put the .ini configuration file in the program folder. Manually
+change the UseLocalIniFile in the Sentinel .ini configuration file to
+UseLocalIniFile 1=yes. The 0 default puts the Sentinel configuration
+file in C:\Users\Bob\AppData\Roaming\ClamSentinel for Windows
+Vista/7/8 computers or in Documents and Settings for Windows XP
+computers. Changing it to 1 will put the configuration file in the
+Clam Sentinel program folder on the USB. The UseLocalIniFile setting
+is the first item in the Sentinel .ini configuration file.</P>
+<P><B>Using Both Clam Sentinel And ClamWin Portable On A USB Drive</B></P>
+<P>First install <A HREF="http://portableapps.com/apps/utilities/clamwin_portable">ClamWin
+Portable</A> on a USB drive/key and start it (run ClamWinPortable.exe
+from the ClamWinPortable directory). Configure ClamWin the way you
+want. Not all normal ClamWin options are available in the Portable
+version). 
+</P>
+<P>Then download the Clam Sentinel Zip file (or Sentinel.exe file)
+from the Clam Sentinel web site to the desktop on your computer.
+Extract the zipped Sentinel files to the desktop of your computer.
+Then copy the Sentinel.exe file, the .ini file, and the Sentinel
+Recover file to the USB drive in the ClamWinPortable\App\clamwin\bin
+folder on the USB.</P>
+<P>Next configure Clam Sentinel <SPAN STYLE="font-weight: normal">to
+use the .ini configuration file that is in the local folder from
+where Sentinel is run (the ClamWin\bin directory on the USB). The
+configuration item is UseLocalIniFile 1=yes. Do not use the zero
+default. You can change the Sentinel.ini file in Notepad or a similar
+text editor. Save the .ini file after making this change. The
+UseLocalIniFile setting is the first item in the Sentinel .ini
+configuration file. </SPAN>
+</P>
+<P STYLE="font-weight: normal">You must also configure Clam Sentinel
+to use the local ClamWin configuration file on the USB drive. To do
+this, make the PathClamWin=..\..\..\data\settings active. Do this by
+removing the semicolon (;) from the beginning of the line in the Clam
+Sentinel .ini file and put a semicolon (;) at the beginning of the
+line for any other &ldquo;PathClamWin=&rdquo; statements in the .ini
+file. This configuration always works best for me if I put
+PathClamWin=f:\ClamWinPortable\App\DefaultData\settings. The USB
+drive is usually drive F or G, so change it as needed.</P>
+<P><SPAN STYLE="font-weight: normal">Do not run Clam Sentinel before
+you make the two manual configuration changes mentioned above. </SPAN>Then
+click on the Sentinel.exe file in the ClamWin bin folder to run Clam
+Sentinel. You can do any other configuration via the Clam Sentinel
+badge in the system tray after starting. You can then delete the Clam
+Sentinel files on your desktop. 
+</P>
+<P>From now on, you can start Clam Sentinel on the USB by clicking on
+the ClamSentinel.exe file in the ClamWin\bin folder on the USB, and
+Clam Sentinel will start protecting you. I suggest that you do not
+configure Clam Sentinel on the USB to run on startup&mdash;start it
+manually each time you insert the USB. When you start Clam Sentinel,
+it drops an icon in the system tray&mdash;just like it does for the
+regular hard drive version. You can configure Clam Sentinel by
+clicking on the icon&mdash;just like the regular version. Be sure to
+enable the System Monitor to detect suspicious files only.</P>
+<P>After Clam Sentinel is installed on the USB, you do not have to
+start ClamWin Portable any more&mdash;Clam Sentinel will find the
+ClamWin Portable files it needs on the USB key if you configure as
+suggested. You do not need ClamWin Portable running in order to use
+Clam Sentinel, but you should have both programs configured on USB as
+mentioned. You will need to start ClamWin Portable, however, in order
+to update the ClamWin signature database. Do this at least daily, but
+more often if you use the internet a lot. 
+</P>
+<P>You can make a shortcut to Clam Sentinel on the USB and put it in
+the ClamWinPortable folder/directory with the ClamWinPortable.exe
+file. You could also make a shortcut to ClamWinPortable.exe and
+ClamSentinel.exe on your desktop so that you can start them from your
+desktop. CAUTION: before setting up or using ClamWinPortable and
+ClamSentinel from the USB key, you will need to STOP them from
+running if they are already installed on your hard drive. In fact, if
+you want to run ClamWin and Sentinel from USB, it is best if you do
+not have them installed locally on your hard drive. 
+</P>
+<P>You can stop both programs from running locally on the computer by
+right clicking on their icons in the system tray and then selecting
+Exit or Stop. When you want to remove the USB key from the computer,
+you will have to stop Clam Sentinel on the USB (and ClamWinPortable
+if it is running), and then click on the USB icon in the system tray
+and stop the USB from running before you can remove it without doing
+any damage to the USB.</P>
+<P>Be sure to keep your old Sentinel.exe and .ini and Sentinel
+Recover files from the USB when you update to a new version of
+ClamWin Portable. When future updates to Clam Sentinel are available,
+just copy the new Sentinel.exe file to the USB like you first did.
+Your old Sentinel .ini file and Sentinel Recover file on the USB will
+still be good, and Sentinel will update them during installation if
+needed.</P>
+<P><B>Thank You</B></P>
+<P>Thank you for using Clam Sentinel. If you like it, please tell
+other people about it, and give the author, Andrea Russo, your
+comments and suggestions. Visit the Sentinel web site monthly for
+news and updates.</P>
+<P><I>by Robert Scroggins</I></P>
+</BODY>
+</HTML>
